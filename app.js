@@ -33,9 +33,7 @@ const enableHeaderApp = function(p) {
       p.style.display ="none";   
 }; 
 
-enableHeaderApp(navbar); 
-
-  /*
+  
 if(screen.width<600){
    if(!!navbar){
     enableHeaderApp(navbar); 
@@ -45,7 +43,7 @@ if(screen.width<600){
      enableHeaderApp(headerAppId); 
   }
 }
-*/
+
 
 
 const menuBtn = document.querySelector('.menu-btn');
