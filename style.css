@@ -332,7 +332,8 @@
   }
 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {  
+
     h1 {
       font-size: 6vw;
       }
@@ -403,34 +404,43 @@
       dialog{
         background-color: rgba(36, 41, 67, 0.9);
         color: var(--footerbg);
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        width: 70%;
       }
     
-      ul{
-        list-style: none;
-        width: inherit;
-        margin: 0;
-        padding: 0;
-      }
-    
-      ul li{
-        list-style-type: none;
-        width: inherit;
-        margin: 1vh 0 1vh 0;
-        border-top: 2px solid red;
-      }
-    
-      ul li:hover{
-        background-color:#ffcc00;
-      }
-    
-      ul li a{
-        text-decoration: none;
-        width: inherit;
-        padding: 1vh 0 1vh 0;
-        color:white;
-      }
-    
-    
+     
+        
+        ul{
+          list-style: none;
+          width: inherit;
+          margin: 0;
+          padding: 0;
+          width: 80%;
+        }
+      
+        ul li{
+          list-style-type: none;
+          width: inherit;
+          margin: 1vh 0 1vh 0;
+          border-top: 2px solid red;
+          width: 80%;
+        }
+      
+        ul li:hover{
+          background-color:#ffcc00;
+        }
+      
+        ul li a{
+          text-decoration: none;
+          width: inherit;
+          padding: 1vh 0 1vh 0;
+          color:white;
+        }
+
+     
+      
       .o-dialog__close-icon {
         display: block;
         height: 1rem;
@@ -439,6 +449,6 @@
         width: 1rem;
       }
     
-  }
+  } 
 
   
