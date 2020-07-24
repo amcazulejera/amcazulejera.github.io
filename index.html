@@ -11,9 +11,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" />
     <link rel="stylesheet" href="style.css"></link>
-    <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
+
+  <header>
+    <div id="headerAppId" class="headerApp">
+        <div class="menu-btn" style="grid-column:1 / span 2;align-self: start;">
+          <div class="menu-btn__burger">
+          </div> 
+        </div>
+        <div style="grid-column:3 / span 10;align-self: start;">
+           
+        </div>
+    </div>
+  </header>
+
     <nav id="navbar" class="nav">
         <ul class="nav-list">
           <li>
@@ -43,7 +55,7 @@
           >
             <img
               class="project-image"
-              src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/p960x960/65106625_2208494575936061_1406445882127155200_o.jpg?_nc_cat=110&_nc_sid=85a577&_nc_ohc=Ih-uL-vcRMwAX-ngm5f&_nc_ht=scontent.fmex10-2.fna&_nc_tp=6&oh=609b6cecbbc68dc3553414a50a301f8b&oe=5F035055"
+              src="/images/EstrellaPicos.jpg"
               alt="Trabajo Estrella de 8 Picos"
             />
             <p class="project-title">
@@ -57,7 +69,7 @@
           >
             <img
               class="project-image"
-              src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/91714419_2776297149155798_6234425366954377216_n.jpg?_nc_cat=105&_nc_sid=110474&_nc_ohc=C5pRex1hNW8AX-NGq7q&_nc_ht=scontent.fmex10-2.fna&oh=cfd3a4218d20a937212ee75070fbc341&oe=5F026E71"
+              src="/images/EscalerasMarmol.jpg"
               alt="Escaleras de Marmol"
             />
             <p class="project-title">
@@ -71,7 +83,7 @@
           >
             <img
               class="project-image"
-              src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/82083486_2614218505363664_8782969766814941184_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=MNiZ_TWDrlgAX96yiEZ&_nc_ht=scontent.fmex10-2.fna&oh=bf5e88387b34aa3534449ace943c609e&oe=5F021DE1"
+              src="/images/Cosina1.jpg"
               alt="Cosinas"
             />
             <p class="project-title">
@@ -85,7 +97,7 @@
           >
             <img
               class="project-image"
-              src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/s960x960/75119640_2433097306809119_2170970204211773440_o.jpg?_nc_cat=100&_nc_sid=110474&_nc_ohc=bx3yybHt7H0AX-FPS8t&_nc_ht=scontent.fmex10-2.fna&_nc_tp=7&oh=c94be492e29f2f92d2fff78c63851c4c&oe=5F014BD1"
+              src="/images/Banio1.jpg"
               alt="Baños"
             />
             <p class="project-title">
@@ -99,7 +111,7 @@
           >
             <img
               class="project-image"
-              src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/69855826_2360453264073524_8990201401976029184_n.jpg?_nc_cat=106&_nc_sid=110474&_nc_ohc=UbnDy2H7tvAAX9YsJhV&_nc_ht=scontent.fmex10-2.fna&oh=9a1f40fed70779285eac98e301b53fb1&oe=5F014C41"
+              src="/images/PisoCuarto1.jpg"
               alt="Pisos de Cuartos"
             />
             <p class="project-title">
@@ -113,7 +125,7 @@
           >
             <img
               class="project-image"
-              src="https://scontent.fmex10-2.fna.fbcdn.net/v/t1.0-9/69748773_2345179218934262_1624352649912516608_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=ka-1kJEo-G4AX8LPCQw&_nc_ht=scontent.fmex10-2.fna&oh=4cd853047b889e23fa1e306d1dec7929&oe=5F0058EC"
+              src="images/Regadera1.jpg"
               alt="Regaderas"
             />
             <p class="project-title">
@@ -145,8 +157,33 @@
             ><i class="fas fa-mobile-alt"></i> Llamanos:55-22-18-69-61</a
           >
         </div>
+        <div id="divfooter" class="contact-links">
+        </div>
+        <div class="contact-links">
+          Elaborado por:<a href="https://sowebmex.github.io/" target="_blank">   SOWEBMEX</a>
+        </div>
       </section>
       
 
+      <dialog id="favDialog">
+        <button id="closeDialogBtn" type="button" onclick="document.getElementById('favDialog').close();" style="float: right;">
+          <svg class="o-dialog__close-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <title>Close dialog</title>
+            <path d="M3 3l10 10M3 13L13 3"/>
+          </svg>
+        </button>
+    <nav class="xnav">
+      <ul>
+          <li><a href="#welcome-section" onclick="dialogOpenClose()">Acerca de Nosotros</a></li>
+          <li><a href="#projects" onclick="dialogOpenClose()">Nuestros Trabajos</a></li>
+          <li><a href="#contact" onclick="dialogOpenClose()">Contáctenos</a></li>
+      </ul>
+     </nav>
+  </dialog>
+
+
+  
+
+      <script src="app.js" charset="utf-8"></script>
 </body>
 </html>
